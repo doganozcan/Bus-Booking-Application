@@ -1,0 +1,367 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".Fragments.SeferAraFragment"
+    android:background="#E8FAFAFA">  <!-- #E8FAFAFA -->
+
+    <!-- TODO: Update blank fragment layout -->
+
+    <!--<androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recylerView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="2dp" />-->
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="250dp"
+        android:background="#373c52"
+        app:layout_constraintEnd_toStartOf="parent"
+        tools:ignore="MissingConstraints">
+
+        <TextView
+            android:id="@+id/txtADSOYAD"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="150dp"
+            android:text="biBilet.com"
+            android:textColor="@color/white"
+            android:textSize="25dp"
+            android:textStyle="bold"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="58dp"
+            android:layout_marginLeft="-180dp"
+            android:text="Nereye Gitmek İstiyorsun?"
+            android:textColor="@color/white"
+            android:textSize="20dp"
+            android:textStyle="bold"
+            android:alpha="0.6"
+            />
+        <ImageView
+            android:layout_width="85dp"
+            android:layout_height="85dp"
+            android:src="@drawable/bstop"
+            android:layout_marginLeft="-180dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="30dp"/>
+
+    </LinearLayout>
+
+    <GridLayout
+        android:layout_width="400dp"
+        android:layout_height="140dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginTop="220dp">
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cardViewAra"
+            android:layout_columnWeight="1"
+            android:layout_rowWeight="1"
+            app:cardCornerRadius="20dp"
+            app:cardElevation="0dp"
+            android:layout_margin="0dp"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:backgroundTint="@color/white"
+            >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="15dp"
+                android:layout_marginLeft="35dp"
+                >
+
+                <Spinner
+                    android:id="@+id/spNerden"
+                    android:layout_width="340dp"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:background="@drawable/style_spinner1"
+                    tools:ignore="SpeakableTextPresentCheck,TouchTargetSizeCheck" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="83dp"
+                android:layout_marginLeft="35dp"
+                >
+
+                <Spinner
+                    android:id="@+id/spNereye"
+                    android:layout_width="340dp"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:background="@drawable/style_spinner1"
+
+                    tools:ignore="SpeakableTextPresentCheck,TouchTargetSizeCheck" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="5dp"
+                >
+                <ImageView
+                    android:id="@+id/yon"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:src="@drawable/change2"
+                    android:layout_marginLeft="300dp"
+                    android:layout_marginTop="52dp"
+                    />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="5dp"
+                >
+                <ImageView
+                    android:layout_width="20dp"
+                    android:layout_height="100dp"
+                    android:src="@drawable/konum"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="25dp"
+                    />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                >
+                <TextView
+                    android:layout_width="80dp"
+                    android:layout_height="27dp"
+                    android:text="Nerden"
+                    android:textColor="#1581bf"
+                    android:textSize="15dp"
+                    android:layout_marginLeft="40dp"
+                    />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                >
+
+                <ImageView
+                    android:layout_width="260dp"
+                    android:layout_height="5dp"
+                    android:src="@drawable/line"
+                    android:layout_marginTop="65dp"
+                    android:layout_marginLeft="40dp"
+                    />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                >
+
+                <ImageView
+                    android:layout_width="260dp"
+                    android:layout_height="5dp"
+                    android:src="@drawable/line"
+                    android:layout_marginTop="65dp"
+                    android:layout_marginLeft="330dp"
+                    />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                >
+                <TextView
+                    android:layout_width="80dp"
+                    android:layout_height="27dp"
+                    android:text="Nereye"
+                    android:textColor="#1581bf"
+                    android:textSize="15dp"
+                    android:layout_marginTop="72dp"
+                    android:layout_marginLeft="40dp"
+                    />
+            </LinearLayout>
+
+        </androidx.cardview.widget.CardView>
+
+
+    </GridLayout>
+
+    <GridLayout
+        android:layout_width="400dp"
+        android:layout_height="130dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginTop="380dp">
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cardViewTarih"
+            android:layout_columnWeight="1"
+            android:layout_rowWeight="1"
+            app:cardCornerRadius="20dp"
+            app:cardElevation="0dp"
+            android:layout_margin="0dp"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:backgroundTint="@color/white"
+            >
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                >
+                <ImageView
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:src="@drawable/ic_calendar"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="35dp"
+                    />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                >
+                <TextView
+                    android:layout_width="110dp"
+                    android:layout_height="27dp"
+                    android:text="Gidiş Tarihi"
+                    android:textColor="#1581bf"
+                    android:textSize="15dp"
+                    android:layout_marginLeft="50dp"
+                    />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp">
+                <TextView
+                    android:id="@+id/txttarih"
+                    android:layout_width="340dp"
+                    android:layout_height="40dp"
+                    android:text="Gidiş Tarihi Seçiniz"
+                    android:textSize="15dp"
+                    android:textColor="@color/black"
+                    android:layout_marginTop="35dp"
+                    android:layout_marginLeft="50dp"
+                    />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                >
+
+                <ImageView
+                    android:layout_width="340dp"
+                    android:layout_height="5dp"
+                    android:src="@drawable/line"
+                    android:layout_marginTop="65dp"
+                    android:layout_marginLeft="40dp"
+                    />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                >
+
+                <Button
+                    android:id="@+id/btnBugun"
+                    android:layout_width="80dp"
+                    android:layout_height="30dp"
+                    android:layout_marginLeft="35dp"
+                    android:layout_marginTop="80dp"
+                    android:background="@drawable/ripple_effect2"
+                    android:backgroundTint="#1581bf"
+                    android:gravity="center"
+                    android:padding="1dp"
+                    android:text="Bugün"
+                    android:textAllCaps="false"
+                    android:textColor="@color/white"
+                    android:textSize="17dp"
+                    android:textStyle="normal"
+                    tools:ignore="TouchTargetSizeCheck" />
+
+                <Button
+                    android:id="@+id/btnYarin"
+                    android:layout_width="80dp"
+                    android:layout_height="30dp"
+                    android:layout_marginLeft="35dp"
+                    android:layout_marginTop="80dp"
+                    android:background="@drawable/ripple_effect2"
+                    android:backgroundTint="#1581bf"
+                    android:gravity="center"
+                    android:padding="1dp"
+                    android:text="Yarın"
+                    android:textAllCaps="false"
+                    android:textColor="@color/white"
+                    android:textSize="17dp"
+                    android:textStyle="normal"
+                    tools:ignore="TouchTargetSizeCheck" />
+            </LinearLayout>
+
+        </androidx.cardview.widget.CardView>
+
+
+    </GridLayout>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        tools:ignore="MissingConstraints"
+        android:padding="5dp">
+        <Button
+            android:id="@+id/btnOtobusBul"
+            android:layout_width="220dp"
+            android:layout_height="48dp"
+            android:layout_marginTop="530dp"
+            android:layout_marginLeft="85dp"
+            android:padding="11dp"
+            android:text="Otobüs Bileti Bul"
+            android:textAllCaps="false"
+            android:backgroundTint="#1581bf"
+            android:textSize="20dp"
+            android:background="@drawable/ripple_effect"
+            android:textStyle="bold"
+            android:textColor="@color/white"
+            />
+
+    </LinearLayout>
+    <TextView
+        android:id="@+id/txtTemp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="58dp"
+        android:layout_marginLeft="-180dp"
+        android:text="deneme"
+        android:visibility="visible"
+        tools:ignore="MissingConstraints" />
+</androidx.constraintlayout.widget.ConstraintLayout>

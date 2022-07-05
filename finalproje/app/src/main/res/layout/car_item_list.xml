@@ -1,0 +1,209 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:Android="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_height="wrap_content"
+    android:padding="10dp">
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/MyCardView"
+        app:cardElevation="10dp"
+        app:cardCornerRadius="0dp"
+        app:cardBackgroundColor="@color/white"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        Android:layout_marginBottom="0dp"
+        >
+        
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+           <LinearLayout
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:layout_marginTop="10dp"
+               >
+               <ImageView
+
+                   android:layout_margin="10dp"
+                   android:src="@drawable/logo"
+                   android:id="@+id/imgBusLogo1"
+                   android:layout_width="100dp"
+                   android:layout_height="80dp"
+                   android:scaleType="fitXY"
+                   />
+           </LinearLayout>
+
+            <LinearLayout
+                android:layout_marginTop="20dp"
+                android:orientation="vertical"
+                android:layout_width="90dp"
+                android:layout_height="wrap_content"
+                >
+
+                <TextView
+                    android:id="@+id/txtSaat"
+                    android:layout_margin="10dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="22.45"
+                    android:textStyle="bold"
+                    android:textSize="25dp"
+                    android:textColor="@color/black"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_marginLeft="60dp"
+                android:layout_marginTop="20dp"
+                android:orientation="vertical"
+                android:layout_width="90dp"
+                android:layout_height="wrap_content"
+                >
+
+                <TextView
+                    android:id="@+id/txtFiyat"
+                    android:layout_margin="10dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="250 ₺"
+                    android:textSize="25dp"
+                    android:textStyle="bold"
+                    android:textColor="@color/black"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_marginLeft="-235dp"
+                android:layout_marginTop="60dp"
+                android:orientation="vertical"
+                android:layout_width="120dp"
+                android:layout_height="wrap_content"
+                >
+
+                <TextView
+                    android:id="@+id/txtYolculukSüresi"
+                    android:layout_margin="10dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="6s 35 dk"
+                    android:textColor="@color/black"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="60dp"
+                android:orientation="vertical"
+                android:layout_width="300dp"
+                android:layout_height="wrap_content"
+                >
+
+                <TextView
+                    android:id="@+id/txtDoluluk"
+                    android:layout_margin="10dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Sefer Dolu"
+                    android:textColor="@color/black"/>
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_marginTop="90dp"
+            android:orientation="vertical"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            >
+
+            <TextView
+                android:id="@+id/txtKoltukTipi"
+                android:layout_margin="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Koltuk Tipi"
+                android:textStyle="bold"
+                android:textColor="@color/black"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            >
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="5dp"
+                android:src="@drawable/line4"
+                android:layout_marginTop="132dp"
+                android:layout_marginLeft="0dp"
+                />
+
+        </LinearLayout>
+
+        <LinearLayout
+
+            android:orientation="vertical"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="135dp"
+            android:layout_marginLeft="285dp"
+            >
+
+            <TextView
+                android:id="@+id/txtIncele"
+                android:layout_margin="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="İncele"
+                android:textSize="16dp"
+                android:textStyle="bold"
+                android:textColor="@color/black"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            >
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="17dp"
+                android:src="@drawable/ic_drop_down"
+                android:layout_marginTop="143dp"
+                android:layout_marginLeft="263dp"
+                />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_marginTop="105dp"
+            android:orientation="vertical"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            >
+
+            <TextView
+                android:id="@+id/txtNerdenNereye"
+                android:layout_margin="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Nerden > Nereye"
+                android:textStyle="bold"
+                android:textColor="@color/black"/>
+
+        </LinearLayout>
+
+
+    </androidx.cardview.widget.CardView>
+
+</LinearLayout>

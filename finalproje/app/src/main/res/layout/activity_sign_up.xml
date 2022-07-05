@@ -1,0 +1,334 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SignUpActivity"
+    android:background="@color/white"
+
+    >
+
+    <TextView
+        android:id="@+id/isim"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="134dp"
+        android:layout_marginTop="0dp"
+        android:text="biBilet.com"
+        android:textColor="#373c52"
+        android:textSize="28sp"
+        android:textStyle="bold" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="200dp"
+        android:layout_height="100dp"
+        android:layout_below="@+id/isim"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="112dp"
+        android:layout_marginTop="3dp"
+        android:src="@drawable/logo3" />
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/met1"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_below="@+id/imageView"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="3dp"
+        android:layout_marginTop="2dp"
+        android:background="@drawable/custom_input"
+        android:backgroundTint="@color/white"
+        android:padding="0dp"
+        android:textColorHint="#373c52"
+        app:endIconMode="clear_text"
+        app:endIconTint="@color/black">
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/txtAd"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="0dp"
+            android:layout_marginBottom="0dp"
+            android:backgroundTint="@color/black"
+            android:drawableStart="@drawable/ic_person"
+            android:drawablePadding="8dp"
+            android:ems="10"
+            android:hint="Adınız"
+            android:inputType="text"
+            android:textColor="#373c52"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/met2"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_below="@+id/met1"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="3dp"
+        android:layout_marginTop="2dp"
+        android:background="@drawable/custom_input"
+        android:backgroundTint="@color/white"
+        android:padding="0dp"
+        android:textColorHint="#373c52"
+        app:endIconMode="clear_text"
+        app:endIconTint="@color/black"
+        >
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/txtSoyad"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="0dp"
+            android:layout_marginBottom="0dp"
+            android:backgroundTint="@color/black"
+            android:drawableStart="@drawable/ic_person"
+            android:drawablePadding="8dp"
+            android:ems="10"
+            android:hint="Soyadınız"
+            android:inputType="text"
+            android:textColor="#373c52"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <ImageView
+        android:id="@+id/iVim"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/met2"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="12dp"
+        android:src="@drawable/ic_card" />
+
+    <TextView
+        android:id="@+id/dgnTarih"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/met2"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="10dp"
+        android:layout_toEndOf="@+id/iVim"
+        android:text="Doğum Tarihinizi Seçin"
+        android:textColor="#373c52"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/met4"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_below="@+id/dgnTarih"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="3dp"
+        android:layout_marginTop="2dp"
+        android:background="@drawable/custom_input"
+        android:backgroundTint="@color/white"
+        android:padding="0dp"
+        android:textColorHint="#373c52"
+        app:endIconMode="clear_text"
+        app:endIconTint="@color/black">
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/tc"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="0dp"
+            android:layout_marginBottom="0dp"
+            android:backgroundTint="@color/black"
+            android:drawableStart="@drawable/ic_card"
+            android:drawablePadding="8dp"
+            android:ems="10"
+            android:hint="T.C Kimlik Numaranızı Girin"
+            android:inputType="number"
+            android:maxLength="11"
+            android:textColor="#373c52"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <RadioGroup
+        android:id="@+id/rb_group"
+        android:layout_width="229dp"
+        android:layout_height="65dp"
+        android:layout_below="@+id/met4"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="1dp"
+        android:layout_toEndOf="@+id/textView"
+        android:orientation='horizontal'
+        >
+
+        <RadioButton
+            android:id="@+id/rbKadın"
+            android:layout_width="114dp"
+            android:layout_height="65dp"
+            android:text="Kadın"
+            android:textColor="#373c52"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <RadioButton
+            android:id="@+id/rbErkek"
+            android:layout_width="match_parent"
+            android:layout_height="66dp"
+            android:text="Erkek"
+            android:textColor="#373c52"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+    </RadioGroup>
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/met4"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="22dp"
+        android:text="Cinsiyetiniz :"
+        android:textColor="@color/black"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/met5"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_below="@+id/rb_group"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="3dp"
+        android:layout_marginTop="2dp"
+        android:background="@drawable/custom_input"
+        android:backgroundTint="@color/white"
+        android:padding="0dp"
+        android:textColorHint="#373c52"
+        app:endIconMode="clear_text"
+        app:endIconTint="@color/black"
+        >
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/telefon_No"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="0dp"
+            android:layout_marginBottom="0dp"
+            android:backgroundTint="@color/black"
+            android:drawableStart="@drawable/ic_phone"
+            android:drawablePadding="8dp"
+            android:ems="10"
+            android:hint="Telefon Numaranızı Girin"
+            android:inputType="number"
+            android:maxLength="10"
+            android:textColor="#373c52"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/met6"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@drawable/custom_input"
+        android:layout_below="@+id/met5"
+        android:padding="0dp"
+        app:endIconMode="clear_text"
+        app:endIconTint="@color/black"
+        android:backgroundTint="@color/white"
+        android:textColorHint="#373c52"
+        >
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/email"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@color/black"
+            android:drawableStart="@drawable/ic_email1"
+            android:drawablePadding="8dp"
+            android:ems="10"
+            android:inputType="textEmailAddress"
+            android:textColor="#373c52"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:hint="E-posta"
+            tools:ignore="SpeakableTextPresentCheck,TouchTargetSizeCheck" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/met7"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@drawable/custom_input"
+        android:layout_below="@+id/met6"
+        android:padding="0dp"
+        app:endIconMode="password_toggle"
+        app:endIconTint="#373c52"
+        android:backgroundTint="@color/white"
+        android:textColorHint="#373c52"
+        >
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/sifre"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@color/black"
+            android:drawableStart="@drawable/ic_lock"
+            android:drawablePadding="8dp"
+            android:ems="10"
+            android:inputType="textPassword"
+            android:textColor="#373c52"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:hint="Şifre"
+            tools:ignore="SpeakableTextPresentCheck,TouchTargetSizeCheck" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <Button
+        android:id="@+id/btnKayit"
+        android:layout_width="163dp"
+        android:layout_height="54dp"
+        android:layout_below="@+id/met7"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="123dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/ripple_effect"
+        android:backgroundTint="#373c52"
+        android:padding="11dp"
+        android:text="Kayıt Ol"
+        android:textAllCaps="false"
+        android:textColor="@color/white"
+        android:textSize="15dp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/btn_grsYap"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/btnKayit"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="172dp"
+        android:layout_marginTop="8dp"
+        android:text="Giriş Yap"
+        android:textColor="@color/black"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+
+</RelativeLayout>
+
+<!--
+
+ <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:layout_below="@+id/isim"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="112dp"
+        android:layout_marginTop="3dp"
+        android:src="@drawable/logo3" />
+
+-->

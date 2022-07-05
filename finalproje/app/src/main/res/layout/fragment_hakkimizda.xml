@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Fragments.HakkimizdaFragment"
+    android:background="#fafafa"
+    >
+    <GridLayout
+        android:id="@+id/gridLayout"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="#373c52">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="biBilet.com  Hakkında"
+            android:textColor="@color/white"
+            android:textSize="20dp"
+            android:textStyle="bold" />
+    </GridLayout>
+
+    <ScrollView
+     android:layout_width="match_parent"
+     android:layout_height="match_parent"
+        android:layout_below="@id/gridLayout"
+        >
+     <TextView
+         android:id="@+id/txtHakkinda"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:text="biBilet.com  Hakkında"
+         android:layout_marginTop="10dp"
+         android:layout_marginLeft="10dp"
+         android:textColor="@color/black"
+         android:textStyle="bold" />
+
+ </ScrollView>
+
+
+
+
+</RelativeLayout>

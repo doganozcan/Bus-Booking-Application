@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/nav_seferAra"
+        android:title="Sefer Ara"
+        android:icon="@drawable/ic_search"/>
+    <item
+        android:id="@+id/nav_bilet_islemleri"
+        android:title="Bilet İşlemleri"
+        android:icon="@drawable/tickets" />
+
+    <item
+        android:id="@+id/nav_kesfet"
+        android:title="Keşfet"
+        android:icon="@drawable/ic_location"/>
+
+    <item
+        android:id="@+id/nav_hesabım"
+        android:title="Hesabım"
+        android:icon="@drawable/ic_person"/>
+</menu>
